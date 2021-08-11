@@ -5,7 +5,7 @@ const app = express();
 
 // Create an array to store data--GET
 
-let appData = {};
+let projectData = {};
 
 // Create the middelware
 
@@ -36,7 +36,7 @@ const server = app.listen(port, function() {
 // GET ROUTE 
 
 app.get('/all', function(req, res) {
-    res.send(appData);
+    res.send(projectData);
 });
 
 // POST ROUTE:
@@ -45,6 +45,6 @@ let data = [];
 
 app.post('/weather', function(req, res) {
     data.push(req.body);
-    appData = req.body;
-    res.send(appData);
+    projectData = req.body;
+    res.send(projectData);
 });
