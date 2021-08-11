@@ -7,7 +7,7 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 // Get date
 
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 // Get UI elements by id 
 
