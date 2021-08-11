@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: rgba(83, 131, 219, 0.822);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    /* grid-template-columns:  */
+    height: 31.8em;
+    width: 25em;
+    background: #009FFF;
+    background: -webkit-linear-gradient(to left, #b92138, #009FFF);
+    background: linear-gradient(to left, #b92138, #009FFF);
+    color: #000b1b;
+    justify-content: left;
+    grid-gap: 0.1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 12px;
+    transition: 800ms ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#app:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.holder {
+    color: azure;
+}
+
+.entry {
+    width: 25em;
+    height: 10em;
+    background: rgba(59, 74, 107, .4);
+}
+
+#entryHolder {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 1em;
+    grid-template-areas: "n n" "t t" "m m" "d f";
+}
+
+#date {
+    grid-area: d;
+}
+
+#temp {
+    font-size: 36px;
+    padding-top: 0.1em;
+    padding-bottom: 0.3em;
+    grid-area: t;
+}
+
+#name {
+    grid-area: n;
+    font-size: 24px;
+}
+
+#content {
+    grid-area: f;
+}
+
+#mainly {
+    grid-area: m;
+}
+
+
+/* .headline {} */
+
+.title {
+    padding-left: 0.5em;
+    font-size: 26px;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+label {
+    display: block;
+    font-size: 27px;
+}
+
+input {
+    display: block;
+    height: 60px;
+    width: 320px;
+    background: #009ac9;
+    color: #000220;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    padding-left: 0.2em;
+}
+
+.headline {
+    padding-left: 1em;
+}
+
+.zip {
+    padding-left: 1em;
+}
+
+.feel {
+    padding-left: 1em;
+}
+
+.generate {
+    padding-top: 0.5em;
+    padding-left: 1.2em;
+}
+
+.entry {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+button {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    background: #ace8ff;
+    color: #02557c;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 4px 5px #444;
+    transition: 500ms ease;
+}
+
+button:hover {
+    background: #02557c;
+    color: #ace8ff;
+    transform: translateY(-0.2em);
+}
+
+h1 {
+    font-size: 36px;
+    color: azure;
+}
+
+textarea {
+    border-radius: 8px;
+    background: #009ac9;
+    color: #000220;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 0.2em;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Style for Placeholder Text*/
+
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #000220;
+    font-family: 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000220;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000220;
+    font-family: 'Oswald', sans-serif;
+}
